@@ -63,7 +63,6 @@ TLDR for Online Mode
 | **Real-time**    | WebSocket (Socket.IO or Pusher Channels) | Live lobby updates & voting |
 | **Styling**      | Tailwind CSS or plain CSS | Mobile‑first responsive design |
 
-*(Optional alternative: Firebase Realtime DB instead of serverless state).*
 
 ---
 
