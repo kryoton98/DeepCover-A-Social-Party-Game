@@ -7,7 +7,6 @@
 # Deepcover 🎯
 
 **A fast‑paced social deduction party game for **_4–8 players_**, where everyone is **anonymous** and the pressure is on.**  
-*(As shown on the main landing page: “Social Party Game · 4‑8 Players · Anonymous · Fast‑Paced”)†
 
 ---
 
