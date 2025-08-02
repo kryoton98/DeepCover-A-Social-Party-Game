@@ -191,7 +191,7 @@ export default function AnonymousVoting({
                     <div className="relative bg-gradient-to-br from-red-900/40 via-orange-900/40 to-yellow-900/40 rounded-2xl p-6 border border-orange-400/30">
                       <div className="flex items-center justify-center space-x-2 mb-3">
                         <Target className="w-6 h-6 text-orange-400 animate-bounce" />
-                        <p className="text-xl text-orange-100 font-bold">It's Your Turn to Vote</p>
+                        <p className="text-xl text-orange-100 font-bold">{"It's Your Turn to Vote"}</p>
                         <Target className="w-6 h-6 text-orange-400 animate-bounce" />
                       </div>
                       <p className="text-orange-200 text-lg">Select the player you want to eliminate</p>
@@ -504,7 +504,7 @@ export default function AnonymousVoting({
                   <div className="flex items-center justify-center space-x-3 mb-4">
                     <Zap className="w-10 h-10 text-yellow-400 animate-spin" />
                     <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
-                      It's a Tie!
+                      {"It's a Tie!"}
                     </h2>
                     <Zap className="w-10 h-10 text-yellow-400 animate-spin" />
                   </div>
@@ -554,4 +554,21 @@ export default function AnonymousVoting({
                   <AudioButton
                     onClick={handleSkipElimination}
                     soundType="button"
-                    className="touch-manipulation pointer-events-auto relative z-20 w-full bg-gradient-to-r from-gray-500 via-slate-600 to-gray-700 hover:from-\
+                    className="touch-manipulation pointer-events-auto relative z-20 w-full bg-gradient-to-r from-gray-500 via-slate-600 to-gray-700 hover:from-gray-400 hover:via-slate-500 hover:to-gray-600 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-xl transform hover:scale-105 transition-all duration-300 border-2 border-gray-400/50"
+                    style={{ touchAction: "manipulation" }}
+                  >
+                    <div className="flex items-center justify-center space-x-3">
+                      <XCircle className="w-6 h-6" />
+                      <span>Skip Elimination</span>
+                      <Zap className="w-6 h-6 animate-pulse" />
+                    </div>
+                  </AudioButton>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+    </div>
+  )
+}
